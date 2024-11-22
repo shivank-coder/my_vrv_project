@@ -2,14 +2,14 @@
 
 ## Overview
 
-This project implements a Role-Based Access Control (RBAC) system with the following features:
+The project implements a Role-Based Access Control (RBAC) system with the following features:
 - User Management: View, add, edit, and delete users with role assignments.
 - Role Management: Define roles, assign permissions, and update roles.
 - Dynamic Permissions: Permissions can be added or removed dynamically.
 
 ## Features
 1. **User Management**
-   - Add new users.
+   - Add new users in project.
    - Edit user details.
    - Delete users.
    - Assign roles to users.
@@ -25,11 +25,11 @@ This project implements a Role-Based Access Control (RBAC) system with the follo
 
 ## Technologies Used
 - React.js
-- CSS for styling
-- Mock data (JSON) for API simulation
+- CSS for styling the pages 
 
 ## Setup Instructions
 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
+   npm install 
