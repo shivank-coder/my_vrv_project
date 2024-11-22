@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 12px;
+  padding: 0;
+  background-color: #eef2f7;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #1b6fac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: #edf1ec;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar button:hover {
+  color: #f10707;
+}
+
+.navbar button.active {
+  color: #f39c12;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2, h3 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+table th {
+  background-color: #abc75d;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f7f9fb;
+}
+
+table tr:hover {
+  background-color: #ecf2f8;
+}
+
+button {
+  background-color: #f60707;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #a3a956;
+  transform: scale(1.05);
+}
+
+button.delete {
+  background-color: #e74c3c;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.permissions label {
+  display: block;
+  margin: 5px 0;
+}
+
+.permissions input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.add-role {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+}
+
+.add-role input[type="text"] {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+
+.add-role button {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  table,
+  table th,
+  table td {
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar button {
+    font-size: 14px;
+    padding: 8px;
+    margin: 5px 0;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .add-role input[type="text"] {
+    width: 100%;
+  }
+}
+
